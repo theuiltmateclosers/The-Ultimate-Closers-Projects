@@ -33,6 +33,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Fix index.html for production
+        run: |
+          cd dist
+          sed -i 's|/src/main.tsx|/assets/index.js|g' index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
