@@ -1,8 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
 import { ArrowLeft, Shield, FileText, Cookie, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -28,7 +25,7 @@ const Legal = () => {
   }, []);
 
   return (
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       {/* Header */}
       <div className="bg-primary/5 border-b">
         <div className="container mx-auto px-4 py-8">
@@ -52,41 +49,36 @@ const Legal = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           {/* Navigation rapide */}
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <FileText className="w-5 h-5" />
-                Navigation rapide
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="#confidentialite" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/5 transition-colors">
-                  <Shield className="w-4 h-4 text-primary" />
-                  <span>Politique de confidentialité</span>
-                </a>
-                <a href="#mentions-legales" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/5 transition-colors">
-                  <FileText className="w-4 h-4 text-primary" />
-                  <span>Mentions légales</span>
-                </a>
-                <a href="#securite-cookies" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/5 transition-colors">
-                  <Cookie className="w-4 h-4 text-primary" />
-                  <span>Sécurité & Cookies</span>
-                </a>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="bg-white rounded-lg border p-6 mb-8">
+            <h2 className="flex items-center gap-2 text-xl font-semibold mb-4">
+              <FileText className="w-5 h-5" />
+              Navigation rapide
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a href="#confidentialite" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                <Shield className="w-4 h-4 text-primary" />
+                <span>Politique de confidentialité</span>
+              </a>
+              <a href="#mentions-legales" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                <FileText className="w-4 h-4 text-primary" />
+                <span>Mentions légales</span>
+              </a>
+              <a href="#securite-cookies" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                <Cookie className="w-4 h-4 text-primary" />
+                <span>Sécurité & Cookies</span>
+              </a>
+            </div>
+          </div>
 
           {/* 1. Politique de confidentialité */}
-          <Card id="confidentialite" className="mb-8">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Shield className="w-6 h-6 text-primary" />
-                Politique de Confidentialité
-                <Badge variant="secondary">Conforme RGPD</Badge>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
+          <div id="confidentialite" className="bg-white rounded-lg border p-6 mb-8">
+            <h2 className="flex items-center gap-2 text-2xl font-semibold mb-6">
+              <Shield className="w-6 h-6 text-primary" />
+              Politique de Confidentialité
+              <span className="bg-secondary text-primary px-2 py-1 rounded text-sm">Conforme RGPD</span>
+            </h2>
+            
+            <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-lg mb-3">Responsable du traitement</h3>
                 <p className="text-muted-foreground">
@@ -95,7 +87,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Données collectées</h3>
@@ -107,7 +99,7 @@ const Legal = () => {
                 </ul>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Finalités du traitement</h3>
@@ -119,7 +111,7 @@ const Legal = () => {
                 </ul>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Durée de conservation</h3>
@@ -130,7 +122,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Droits des utilisateurs</h3>
@@ -150,7 +142,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">IA et traitement automatisé</h3>
@@ -162,7 +154,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Transfert hors UE</h3>
@@ -171,18 +163,17 @@ const Legal = () => {
                   Aucun transfert non autorisé n'est réalisé vers des pays tiers sans garanties appropriées.
                 </p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
 
           {/* 2. Mentions légales */}
-          <Card id="mentions-legales" className="mb-8">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <FileText className="w-6 h-6 text-primary" />
-                Mentions Légales
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
+          <div id="mentions-legales" className="bg-white rounded-lg border p-6 mb-8">
+            <h2 className="flex items-center gap-2 text-2xl font-semibold mb-6">
+              <FileText className="w-6 h-6 text-primary" />
+              Mentions Légales
+            </h2>
+            
+            <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-lg mb-3">Éditeur du site</h3>
                 <p className="text-muted-foreground">
@@ -192,7 +183,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Hébergeur</h3>
@@ -202,7 +193,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Propriété intellectuelle</h3>
@@ -214,7 +205,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Responsabilité</h3>
@@ -225,7 +216,7 @@ const Legal = () => {
                 </p>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Loi applicable</h3>
@@ -234,18 +225,17 @@ const Legal = () => {
                   seront seuls compétents.
                 </p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
 
           {/* 3. Politique de sécurité & cookies */}
-          <Card id="securite-cookies" className="mb-8">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Lock className="w-6 h-6 text-primary" />
-                Politique de Sécurité & Cookies
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
+          <div id="securite-cookies" className="bg-white rounded-lg border p-6 mb-8">
+            <h2 className="flex items-center gap-2 text-2xl font-semibold mb-6">
+              <Lock className="w-6 h-6 text-primary" />
+              Politique de Sécurité & Cookies
+            </h2>
+            
+            <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-lg mb-3">Sécurité des données</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
@@ -257,7 +247,7 @@ const Legal = () => {
                 </ul>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Cookies utilisés</h3>
@@ -285,7 +275,7 @@ const Legal = () => {
                 </div>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Gestion du consentement</h3>
@@ -300,7 +290,7 @@ const Legal = () => {
                 </ul>
               </div>
 
-              <Separator />
+              <hr className="border-gray-200" />
 
               <div>
                 <h3 className="font-semibold text-lg mb-3">Protection des comptes</h3>
@@ -314,29 +304,27 @@ const Legal = () => {
                   <li>Détection des tentatives d'intrusion</li>
                 </ul>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
 
           {/* Contact */}
-          <Card className="bg-primary/5">
-            <CardContent className="pt-6">
-              <div className="text-center">
-                <h3 className="font-semibold text-lg mb-3">Questions sur nos politiques ?</h3>
-                <p className="text-muted-foreground mb-4">
-                  Pour toute question concernant nos politiques de confidentialité, 
-                  nos mentions légales ou notre politique de sécurité, contactez-nous :
-                </p>
-                <Button asChild>
-                  <a href="mailto:contact@theultimateclosers.com">
-                    contact@theultimateclosers.com
-                  </a>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="bg-primary/5 rounded-lg border p-6">
+            <div className="text-center">
+              <h3 className="font-semibold text-lg mb-3">Questions sur nos politiques ?</h3>
+              <p className="text-muted-foreground mb-4">
+                Pour toute question concernant nos politiques de confidentialité, 
+                nos mentions légales ou notre politique de sécurité, contactez-nous :
+              </p>
+              <Button asChild>
+                <a href="mailto:contact@theultimateclosers.com">
+                  contact@theultimateclosers.com
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
