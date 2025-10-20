@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Sparkles, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -46,9 +47,9 @@ const Footer = () => {
           {/* Legal */}
           <div className="pt-8 border-t border-background/20 w-full flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-background/60">
             <p>© {new Date().getFullYear()} The Ultimate Closers. All rights reserved.</p>
-            <a href="#" className="hover:text-secondary transition-colors">
-              {t('footer.legal')}
-            </a>
+            <Link to="/legal" className="hover:text-secondary transition-colors">
+              Mentions légales & politique de confidentialité
+            </Link>
           </div>
         </div>
       </div>
