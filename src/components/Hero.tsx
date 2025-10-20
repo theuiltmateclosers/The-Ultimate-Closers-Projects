@@ -43,10 +43,6 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Main title */}
-          <h1 className="font-playfair font-bold text-4xl md:text-6xl lg:text-7xl text-background mb-6 leading-tight">
-            {t('hero.title')}
-          </h1>
 
           {/* Subtitle */}
           <p className="font-inter text-lg md:text-xl text-background/90 mb-10 max-w-2xl mx-auto">
