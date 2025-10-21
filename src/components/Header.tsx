@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles, ChevronDown } from 'lucide-react';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
 
   const navItems = [
     { key: 'nav.home', href: '#hero' },
@@ -50,22 +51,39 @@ const Header = () => {
           {/* Language Selector & Mobile Menu */}
           <div className="flex items-center gap-4">
             {/* Language Selector */}
-            <div className="flex items-center gap-2 bg-muted rounded-full p-1">
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => setLanguage(lang.code)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-                    language === lang.code
-                      ? 'bg-secondary text-primary shadow-md'
-                      : 'text-muted-foreground hover:text-foreground'
-                  }`}
-                  aria-label={`Switch to ${lang.label}`}
-                >
-                  <span className="mr-1">{lang.flag}</span>
-                  {lang.label}
-                </button>
-              ))}
+            <div className="relative">
+              <button
+                onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                className="flex items-center gap-2 px-3 py-1.5 bg-muted rounded-full text-xs font-medium transition-all hover:bg-muted/80"
+                aria-label="Select language"
+              >
+                <span className="text-lg">{languages.find(l => l.code === language)?.flag}</span>
+                <span className="hidden sm:inline">{languages.find(l => l.code === language)?.label}</span>
+                <ChevronDown className={`w-3 h-3 transition-transform ${languageMenuOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Language Dropdown */}
+              {languageMenuOpen && (
+                <div className="absolute top-full right-0 mt-2 bg-background border border-border rounded-lg shadow-lg overflow-hidden min-w-[120px] animate-fade-in">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        setLanguage(lang.code);
+                        setLanguageMenuOpen(false);
+                      }}
+                      className={`w-full px-4 py-2 text-left text-sm flex items-center gap-2 transition-colors ${
+                        language === lang.code
+                          ? 'bg-secondary text-primary font-medium'
+                          : 'text-foreground hover:bg-muted'
+                      }`}
+                    >
+                      <span className="text-lg">{lang.flag}</span>
+                      {lang.label}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Mobile Menu Toggle */}
