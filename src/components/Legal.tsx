@@ -49,7 +49,7 @@ const Legal = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           {/* Navigation rapide */}
-          <div className="bg-white rounded-lg border p-6 mb-8">
+          <div className="bg-background rounded-lg border p-6 mb-8">
             <h2 className="flex items-center gap-2 text-xl font-semibold mb-4">
               <FileText className="w-5 h-5" />
               Navigation rapide
@@ -71,7 +71,7 @@ const Legal = () => {
           </div>
 
           {/* 1. Politique de confidentialité */}
-          <div id="confidentialite" className="bg-white rounded-lg border p-6 mb-8">
+          <div id="confidentialite" className="bg-background rounded-lg border p-6 mb-8">
             <h2 className="flex items-center gap-2 text-2xl font-semibold mb-6">
               <Shield className="w-6 h-6 text-primary" />
               Politique de Confidentialité
@@ -167,7 +167,7 @@ const Legal = () => {
           </div>
 
           {/* 2. Mentions légales */}
-          <div id="mentions-legales" className="bg-white rounded-lg border p-6 mb-8">
+          <div id="mentions-legales" className="bg-background rounded-lg border p-6 mb-8">
             <h2 className="flex items-center gap-2 text-2xl font-semibold mb-6">
               <FileText className="w-6 h-6 text-primary" />
               Mentions Légales
@@ -229,7 +229,7 @@ const Legal = () => {
           </div>
 
           {/* 3. Politique de sécurité & cookies */}
-          <div id="securite-cookies" className="bg-white rounded-lg border p-6 mb-8">
+          <div id="securite-cookies" className="bg-background rounded-lg border p-6 mb-8">
             <h2 className="flex items-center gap-2 text-2xl font-semibold mb-6">
               <Lock className="w-6 h-6 text-primary" />
               Politique de Sécurité & Cookies
