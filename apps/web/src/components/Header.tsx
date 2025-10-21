@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Menu, X, Sparkles, ChevronDown } from 'lucide-react';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
