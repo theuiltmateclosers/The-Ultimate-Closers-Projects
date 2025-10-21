@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* The Ultimate Closers Color System */
-    --background: 0 0% 98%;
+    --background: 44 30% 95%;
     --foreground: 167 69% 18%;
 
     --card: 0 0% 100%;
