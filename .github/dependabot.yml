@@ -7,7 +7,7 @@ updates:
       interval: 'weekly'
     open-pull-requests-limit: 5
     reviewers:
-      - 'your-github-username' # TODO: Update with actual reviewer
+      - 'the.ultimate.closers'
     labels:
       - 'dependencies'
       - 'security'
@@ -20,7 +20,7 @@ updates:
       interval: 'weekly'
     open-pull-requests-limit: 5
     reviewers:
-      - 'your-github-username' # TODO: Update with actual reviewer
+      - 'the.ultimate.closers'
     labels:
       - 'dependencies'
       - 'security'
@@ -33,7 +33,7 @@ updates:
       interval: 'weekly'
     open-pull-requests-limit: 5
     reviewers:
-      - 'your-github-username' # TODO: Update with actual reviewer
+      - 'the.ultimate.closers'
     labels:
       - 'dependencies'
       - 'security'

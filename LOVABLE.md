@@ -54,7 +54,7 @@ Dans Lovable, ajoutez ces variables d'environnement :
 
 1. Aller sur [https://lovable.dev/projects/764836c7-4acb-4f95-864f-ce0a767d6c78](https://lovable.dev/projects/764836c7-4acb-4f95-864f-ce0a767d6c78)
 2. Cliquer sur **Settings** → **Git Integration**
-3. Connecter le repository : `istmeank/the.ultimate.closers`
+3. Connecter le repository : `the.ultimate.closers/the.ultimate.closers`
 4. Sélectionner la branche : `main`
 5. Configurer le chemin racine : `apps/web`
 
@@ -158,4 +158,4 @@ git push origin main
 
 - **Lovable Support** : [https://lovable.dev/support](https://lovable.dev/support)
 - **Documentation Lovable** : [https://docs.lovable.dev](https://docs.lovable.dev)
-- **Issues GitHub** : [https://github.com/istmeank/the.ultimate.closers/issues](https://github.com/istmeank/the.ultimate.closers/issues)
+- **Issues GitHub** : [https://github.com/the.ultimate.closers/the.ultimate.closers/issues](https://github.com/the.ultimate.closers/the.ultimate.closers/issues)

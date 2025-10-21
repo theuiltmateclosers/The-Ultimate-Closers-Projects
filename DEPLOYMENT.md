@@ -11,6 +11,7 @@ Votre domaine affiche une page blanche car l'ancien workflow GitHub Pages ne sup
 ## ✅ Solution Recommandée : Vercel (GRATUIT)
 
 ### Pourquoi Vercel ?
+
 - ✅ **100% GRATUIT** pour projets personnels
 - ✅ Créé par l'équipe Next.js
 - ✅ Déploiement automatique depuis GitHub
@@ -33,7 +34,7 @@ Votre domaine affiche une page blanche car l'ancien workflow GitHub Pages ne sup
 ### 2. Importer le Projet
 
 1. Cliquer sur **"Add New Project"**
-2. Sélectionner le repository : `istmeank/the.ultimate.closers`
+2. Sélectionner le repository : `the.ultimate.closers/the.ultimate.closers`
 3. Vercel détectera automatiquement Next.js
 
 ### 3. Configurer le Monorepo
@@ -52,6 +53,7 @@ Node.js Version: 20.x
 ### 4. Variables d'Environnement (Optionnel)
 
 Ajouter si nécessaire :
+
 - `NEXT_PUBLIC_API_URL` = `https://api.theultimateclosers.com`
 
 ### 5. Déployer !
@@ -67,6 +69,7 @@ Ajouter si nécessaire :
 3. Vercel vous donnera des instructions DNS :
 
 **Chez votre registrar de domaine :**
+
 ```
 Type: A
 Name: @
@@ -87,10 +90,12 @@ Value: cname.vercel-dns.com
 Si vous utilisez déjà Lovable, vous pouvez :
 
 **Option A** : Lovable pour le développement, Vercel pour la production
+
 - Développer sur Lovable
 - Push sur GitHub → déploiement auto sur Vercel
 
 **Option B** : Uniquement Lovable
+
 - Configurer Lovable avec le monorepo (voir LOVABLE.md)
 - Connecter votre domaine dans Lovable Settings
 
@@ -100,32 +105,34 @@ Si vous utilisez déjà Lovable, vous pouvez :
 
 ### Pour le Frontend (Next.js)
 
-| Plateforme | Gratuit | Domaine Custom | CDN | Build Time |
-|------------|---------|----------------|-----|------------|
-| **Vercel** ⭐ | ✅ Illimité | ✅ Oui | ✅ Global | Rapide |
-| **Netlify** | ✅ 300 min/mois | ✅ Oui | ✅ Global | Moyen |
-| **Cloudflare Pages** | ✅ Illimité | ✅ Oui | ✅ Global | Rapide |
+| Plateforme           | Gratuit         | Domaine Custom | CDN       | Build Time |
+| -------------------- | --------------- | -------------- | --------- | ---------- |
+| **Vercel** ⭐        | ✅ Illimité     | ✅ Oui         | ✅ Global | Rapide     |
+| **Netlify**          | ✅ 300 min/mois | ✅ Oui         | ✅ Global | Moyen      |
+| **Cloudflare Pages** | ✅ Illimité     | ✅ Oui         | ✅ Global | Rapide     |
 
 ### Pour l'API (NestJS) - Plus tard
 
 Quand votre API sera prête :
 
-| Plateforme | Gratuit | Notes |
-|------------|---------|-------|
-| **Render** | ✅ 750h/mois | Dort après 15 min d'inactivité |
-| **Railway** | ✅ $5 crédit/mois | Puis payant |
-| **Fly.io** | ✅ Limité | 3 micro VMs |
+| Plateforme  | Gratuit           | Notes                          |
+| ----------- | ----------------- | ------------------------------ |
+| **Render**  | ✅ 750h/mois      | Dort après 15 min d'inactivité |
+| **Railway** | ✅ $5 crédit/mois | Puis payant                    |
+| **Fly.io**  | ✅ Limité         | 3 micro VMs                    |
 
 ---
 
 ## 🔧 Configuration Actuelle
 
 ### Fichiers Ajoutés
+
 - ✅ `vercel.json` - Configuration Vercel optimale
 - ✅ `DEPLOYMENT.md` - Ce guide
 - ❌ `.github/workflows/static.yml` - Supprimé (causait la page blanche)
 
 ### Structure pour Vercel
+
 ```
 the-ultimate-closers/
 ├─ apps/
@@ -141,11 +148,13 @@ the-ultimate-closers/
 ## 🐛 Troubleshooting
 
 ### Page toujours blanche après déploiement
+
 1. Vérifier que le build passe (Vercel → Deployments → View Logs)
 2. Vérifier les variables d'environnement
 3. Vérifier la configuration DNS
 
 ### Erreur de build
+
 ```bash
 # Tester localement d'abord
 cd apps/web
@@ -154,6 +163,7 @@ pnpm build
 ```
 
 ### Domaine ne se connecte pas
+
 - Attendre 24-48h pour propagation DNS complète
 - Vérifier les enregistrements DNS avec : [https://dnschecker.org](https://dnschecker.org)
 
@@ -192,8 +202,9 @@ graph LR
 ## 📞 Besoin d'Aide ?
 
 Si vous avez des problèmes pendant la configuration :
+
 1. Vérifier les logs Vercel : [Deployment Logs]
-2. GitHub Issues : [Créer une issue](https://github.com/istmeank/the.ultimate.closers/issues)
+2. GitHub Issues : [Créer une issue](https://github.com/the.ultimate.closers/the.ultimate.closers/issues)
 3. Discord Vercel : [vercel.com/discord](https://vercel.com/discord)
 
 ---
@@ -205,4 +216,3 @@ Si vous avez des problèmes pendant la configuration :
 3. ⏳ **Plus tard** : Déployer l'API quand elle sera prête
 
 **Votre site sera en ligne en moins de 15 minutes !** 🚀
-

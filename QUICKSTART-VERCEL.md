@@ -9,7 +9,7 @@
 ## ✅ Étape 2 : Importer le Projet (1 min)
 
 1. Cliquer sur **"Add New..." → "Project"**
-2. Chercher et sélectionner : **`the.ultimate.closers`**
+2. Chercher et sélectionner : **`the.ultimate.closers/the.ultimate.closers`**
 3. Cliquer sur **"Import"**
 
 ## ✅ Étape 3 : Configurer (2 min)
@@ -20,23 +20,28 @@
 
 **Root Directory** : Cliquer sur **"Edit"** → Sélectionner **`apps/web`**
 
-**Build Command** : 
+**Build Command** :
+
 ```bash
 pnpm build
 ```
 
 **Install Command** :
+
 ```bash
 pnpm install
 ```
 
-**Output Directory** : 
+**Output Directory** :
+
 ```
 .next
 ```
 
 ### Variables d'Environnement (optionnel)
+
 Cliquer sur **"Environment Variables"** et ajouter :
+
 ```
 NEXT_PUBLIC_API_URL = https://api.theultimateclosers.com
 ```
@@ -69,13 +74,14 @@ Name: @
 Value: 76.76.21.21
 TTL: Auto
 
-Type: CNAME  
+Type: CNAME
 Name: www
 Value: cname.vercel-dns.com
 TTL: Auto
 ```
 
 ### Attendre 5-30 minutes
+
 Votre site sera accessible sur **theultimateclosers.com** !
 
 ---
@@ -100,13 +106,16 @@ Si ça marche localement, ça marchera sur Vercel !
 ## 🆘 Problème ?
 
 ### Build échoue sur Vercel
+
 → Vérifier les logs : Vercel Dashboard → votre projet → Deployments → dernière tentative → View Logs
 
 ### Site ne charge pas
+
 → Attendre 5 minutes après le premier déploiement
 → Vider le cache : Ctrl+Shift+R (Windows) / Cmd+Shift+R (Mac)
 
-### Domaine ne se connecte pas  
+### Domaine ne se connecte pas
+
 → Attendre 24-48h pour propagation DNS
 → Vérifier avec : [https://dnschecker.org](https://dnschecker.org)
 
@@ -115,10 +124,10 @@ Si ça marche localement, ça marchera sur Vercel !
 ## 💡 Astuce Pro
 
 Pour forcer un redéploiement :
+
 ```bash
 git commit --allow-empty -m "chore: redeploy"
 git push
 ```
 
 **Besoin d'aide ?** Regardez les logs Vercel, tout est expliqué !
-
