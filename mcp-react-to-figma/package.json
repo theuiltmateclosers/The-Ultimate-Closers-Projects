@@ -1,0 +1,46 @@
+{
+  "name": "@tuc/mcp-react-to-figma",
+  "version": "1.0.0",
+  "description": "MCP Server pour convertir React/HTML en designs Figma",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "react-to-figma": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "mcp",
+    "figma",
+    "react",
+    "design-to-code",
+    "code-to-design"
+  ],
+  "author": "The Ultimate Closers",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "puppeteer": "^22.0.0",
+    "html-to-image": "^1.11.11",
+    "sharp": "^0.33.0",
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
+
+
+

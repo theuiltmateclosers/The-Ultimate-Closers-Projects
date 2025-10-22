@@ -1,0 +1,17 @@
+# Figma API Configuration
+FIGMA_ACCESS_TOKEN=your_figma_token_here
+FIGMA_FILE_KEY=your_file_key_here
+
+# Local Development
+LOCAL_URL=http://localhost:3000
+PORT=3056
+
+# Options
+DEBUG=false
+HEADLESS=true
+
+
+
+
+
+

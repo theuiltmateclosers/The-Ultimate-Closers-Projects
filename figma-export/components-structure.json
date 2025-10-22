@@ -1,0 +1,142 @@
+{
+  "name": "The Ultimate Closers - Components",
+  "version": "1.0.0",
+  "description": "Structure des composants du site pour import dans Figma",
+  "components": {
+    "Layout": {
+      "Header": {
+        "description": "Navigation principale avec sélecteur de langue",
+        "variants": ["Desktop", "Mobile"],
+        "elements": [
+          "Logo avec icône Sparkles",
+          "Navigation (Accueil, Services, IA, Témoignages, Contact)",
+          "Sélecteur de langue (FR/EN/DAR)",
+          "Menu mobile (hamburger)"
+        ],
+        "states": ["Default", "Scrolled", "Menu Open"]
+      },
+      "Footer": {
+        "description": "Pied de page avec liens sociaux",
+        "elements": [
+          "Logo",
+          "Citation inspirante",
+          "Liens sociaux (LinkedIn, Instagram, YouTube)",
+          "Copyright",
+          "Lien vers mentions légales"
+        ]
+      }
+    },
+    "Sections": {
+      "Hero": {
+        "description": "Section hero avec background image et particules animées",
+        "elements": [
+          "Badge 'Closing Éthique & IA Consciente'",
+          "Titre principal (H1)",
+          "Sous-titre",
+          "2 CTA buttons",
+          "Scroll indicator animé",
+          "Particules flottantes (20)"
+        ],
+        "background": "hero-cosmic.jpg avec overlay gradient"
+      },
+      "Mission": {
+        "description": "Présentation des valeurs",
+        "elements": [
+          "Titre H2",
+          "Texte descriptif",
+          "Grille 4 colonnes de valeurs",
+          "Icônes: Heart, Eye, Handshake, Zap"
+        ],
+        "layout": "2x2 grid sur mobile, 4x1 sur desktop"
+      },
+      "Services": {
+        "description": "Grille de services",
+        "elements": [
+          "Titre H2",
+          "4 cartes de services",
+          "Icônes: TrendingUp, Users, LineChart, Bot",
+          "Effet de gradient au hover"
+        ],
+        "layout": "1 colonne mobile, 2 colonnes tablet, 4 colonnes desktop"
+      },
+      "AISection": {
+        "description": "Section IA Darija avec background sombre",
+        "elements": [
+          "Titre H2",
+          "Texte descriptif",
+          "3 cartes de features",
+          "Icônes: MessageSquare, Database, Brain",
+          "Effets de lumière flottants"
+        ],
+        "background": "ai-network.jpg avec overlay gradient dark"
+      },
+      "Results": {
+        "description": "Métriques et résultats",
+        "elements": [
+          "Titre H2",
+          "3 cartes de métriques",
+          "Icônes: TrendingUp, Shield, Star",
+          "Citation avec auteur",
+          "Animation counter-up au scroll"
+        ]
+      },
+      "Testimonials": {
+        "description": "Témoignages clients",
+        "elements": [
+          "Titre H2",
+          "3 cartes de témoignages",
+          "Avatar avec initiales",
+          "Quote icon",
+          "Nom et drapeau"
+        ],
+        "layout": "1 colonne mobile, 3 colonnes desktop"
+      },
+      "CTA": {
+        "description": "Call-to-action final",
+        "elements": [
+          "Titre H2 large",
+          "Bouton CTA avec icônes (Calendar + ArrowRight)",
+          "Background gradient avec effets lumineux"
+        ],
+        "background": "Gradient primary avec effets blur animés"
+      }
+    },
+    "UI Components": {
+      "Button": {
+        "variants": ["Primary (bg-secondary)", "Secondary (outline)", "Ghost"],
+        "sizes": ["sm", "md", "lg"],
+        "states": ["Default", "Hover (scale-105)", "Active", "Disabled"]
+      },
+      "Card": {
+        "variants": ["Default", "Hover (translate-y, shadow-xl)", "With gradient background"],
+        "elements": ["Header", "Content", "Footer (optional)"]
+      },
+      "Badge": {
+        "variants": ["Default", "Secondary", "Outline"]
+      }
+    }
+  },
+  "breakpoints": {
+    "mobile": "< 768px",
+    "tablet": "768px - 1024px",
+    "desktop": "> 1024px",
+    "2xl": "> 1400px"
+  },
+  "animations": {
+    "fade-in": "Opacity 0 → 1 avec translateY(20px → 0)",
+    "fade-in-scale": "Opacity 0 → 1 avec scale(0.95 → 1)",
+    "glow-pulse": "Drop-shadow pulsant (8px → 20px)",
+    "float": "TranslateY oscillant (0px ↔ -10px)",
+    "particle-float": "Mouvement aléatoire des particules",
+    "counter-up": "Animation des chiffres au scroll"
+  }
+}
+
+
+
+
+
+
+
+
+

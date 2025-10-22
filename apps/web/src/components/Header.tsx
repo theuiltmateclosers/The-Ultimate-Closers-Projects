@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Menu, X, Sparkles, ChevronDown } from 'lucide-react';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -49,6 +50,20 @@ const Header = () => {
               </a>
             ))}
           </nav>
+
+          {/* Auth Buttons */}
+          <div className="hidden md:flex items-center gap-2">
+            <Link href="/auth">
+              <Button variant="ghost" className="text-foreground hover:text-secondary">
+                Connexion
+              </Button>
+            </Link>
+            <Link href="/auth">
+              <Button className="bg-secondary hover:bg-secondary/90 text-primary">
+                Inscription
+              </Button>
+            </Link>
+          </div>
 
           {/* Language Selector & Mobile Menu */}
           <div className="flex items-center gap-4">
@@ -117,6 +132,18 @@ const Header = () => {
                   {t(item.key)}
                 </a>
               ))}
+              <div className="flex flex-col gap-2 pt-4 border-t border-border">
+                <Link href="/auth">
+                  <Button variant="ghost" className="justify-start text-foreground hover:text-secondary w-full">
+                    Connexion
+                  </Button>
+                </Link>
+                <Link href="/auth">
+                  <Button className="bg-secondary hover:bg-secondary/90 text-primary justify-start w-full">
+                    Inscription
+                  </Button>
+                </Link>
+              </div>
             </div>
           </nav>
         )}

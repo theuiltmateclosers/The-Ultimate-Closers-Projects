@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="40" y="60" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="#0D4D44">
+    The Ultimate Closers - Color Palette
+  </text>
+  <text x="40" y="90" font-family="Inter, sans-serif" font-size="14" fill="#666666">
+    Glissez-déposez ce fichier SVG directement dans Figma pour importer toutes les couleurs
+  </text>
+
+  <!-- SECTION: Primary Colors -->
+  <text x="40" y="140" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#333333">
+    🎯 Couleurs Principales
+  </text>
+  
+  <!-- Primary -->
+  <rect x="40" y="160" width="180" height="180" rx="12" fill="#0D4D44"/>
+  <text x="130" y="260" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    Primary
+  </text>
+  <text x="130" y="310" font-family="Monaco, monospace" font-size="12" fill="#FFFFFF" text-anchor="middle">
+    #0D4D44
+  </text>
+  
+  <!-- Secondary -->
+  <rect x="240" y="160" width="180" height="180" rx="12" fill="#E9C46A"/>
+  <text x="330" y="260" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#0D4D44" text-anchor="middle">
+    Secondary
+  </text>
+  <text x="330" y="310" font-family="Monaco, monospace" font-size="12" fill="#0D4D44" text-anchor="middle">
+    #E9C46A
+  </text>
+  
+  <!-- Accent -->
+  <rect x="440" y="160" width="180" height="180" rx="12" fill="#A855F7"/>
+  <text x="530" y="260" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    Accent
+  </text>
+  <text x="530" y="310" font-family="Monaco, monospace" font-size="12" fill="#FFFFFF" text-anchor="middle">
+    #A855F7
+  </text>
+
+  <!-- SECTION: Neutral Colors -->
+  <text x="40" y="400" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#333333">
+    🎨 Couleurs Neutres
+  </text>
+  
+  <!-- Background -->
+  <rect x="40" y="420" width="140" height="140" rx="12" fill="#F5F0E8"/>
+  <text x="110" y="500" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0D4D44" text-anchor="middle">
+    Background
+  </text>
+  <text x="110" y="530" font-family="Monaco, monospace" font-size="10" fill="#666666" text-anchor="middle">
+    #F5F0E8
+  </text>
+  
+  <!-- Foreground -->
+  <rect x="200" y="420" width="140" height="140" rx="12" fill="#0D4D44"/>
+  <text x="270" y="500" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    Foreground
+  </text>
+  <text x="270" y="530" font-family="Monaco, monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">
+    #0D4D44
+  </text>
+  
+  <!-- Muted -->
+  <rect x="360" y="420" width="140" height="140" rx="12" fill="#EDEDED"/>
+  <text x="430" y="500" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="middle">
+    Muted
+  </text>
+  <text x="430" y="530" font-family="Monaco, monospace" font-size="10" fill="#666666" text-anchor="middle">
+    #EDEDED
+  </text>
+  
+  <!-- Muted Foreground -->
+  <rect x="520" y="420" width="140" height="140" rx="12" fill="#737373"/>
+  <text x="590" y="500" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    Muted Text
+  </text>
+  <text x="590" y="530" font-family="Monaco, monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">
+    #737373
+  </text>
+  
+  <!-- Border -->
+  <rect x="680" y="420" width="140" height="140" rx="12" fill="#D6E5E3"/>
+  <text x="750" y="500" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0D4D44" text-anchor="middle">
+    Border
+  </text>
+  <text x="750" y="530" font-family="Monaco, monospace" font-size="10" fill="#666666" text-anchor="middle">
+    #D6E5E3
+  </text>
+  
+  <!-- Card/White -->
+  <rect x="840" y="420" width="140" height="140" rx="12" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="910" y="500" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0D4D44" text-anchor="middle">
+    Card
+  </text>
+  <text x="910" y="530" font-family="Monaco, monospace" font-size="10" fill="#666666" text-anchor="middle">
+    #FFFFFF
+  </text>
+
+  <!-- SECTION: Gradients -->
+  <text x="40" y="620" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#333333">
+    ✨ Gradients
+  </text>
+  
+  <!-- Gradient Cosmic -->
+  <defs>
+    <linearGradient id="gradientCosmic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D4D44;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A3835;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="40" y="640" width="360" height="120" rx="12" fill="url(#gradientCosmic)"/>
+  <text x="220" y="710" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    Gradient Cosmic
+  </text>
+  
+  <!-- Gradient Gold -->
+  <defs>
+    <linearGradient id="gradientGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E9C46A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4D687;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="420" y="640" width="360" height="120" rx="12" fill="url(#gradientGold)"/>
+  <text x="600" y="710" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#0D4D44" text-anchor="middle">
+    Gradient Gold
+  </text>
+  
+  <!-- Gradient AI -->
+  <defs>
+    <linearGradient id="gradientAI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333EA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="800" y="640" width="360" height="120" rx="12" fill="url(#gradientAI)"/>
+  <text x="980" y="710" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    Gradient AI
+  </text>
+
+  <!-- SECTION: Typography Examples -->
+  <text x="40" y="820" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#333333">
+    ✍️ Typographie
+  </text>
+  
+  <!-- Playfair Display Examples -->
+  <rect x="40" y="840" width="550" height="300" rx="12" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="60" y="870" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#666666">
+    Playfair Display (Headings)
+  </text>
+  <text x="60" y="920" font-family="'Playfair Display', serif" font-size="48" font-weight="700" fill="#0D4D44">
+    Hero Title
+  </text>
+  <text x="60" y="970" font-family="'Playfair Display', serif" font-size="36" font-weight="700" fill="#0D4D44">
+    Section Title
+  </text>
+  <text x="60" y="1010" font-family="'Playfair Display', serif" font-size="24" font-weight="600" fill="#0D4D44">
+    Card Title
+  </text>
+  <text x="60" y="1050" font-family="'Playfair Display', serif" font-size="20" font-weight="700" fill="#0D4D44">
+    Subtitle
+  </text>
+  <text x="60" y="1120" font-family="Monaco, monospace" font-size="11" fill="#999999">
+    Font: Playfair Display | Weights: 600-700
+  </text>
+  
+  <!-- Inter Examples -->
+  <rect x="610" y="840" width="550" height="300" rx="12" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="630" y="870" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#666666">
+    Inter (Body Text)
+  </text>
+  <text x="630" y="920" font-family="Inter, sans-serif" font-size="20" font-weight="400" fill="#0D4D44">
+    Body XL - 20px Regular
+  </text>
+  <text x="630" y="960" font-family="Inter, sans-serif" font-size="18" font-weight="400" fill="#0D4D44">
+    Body Large - 18px Regular
+  </text>
+  <text x="630" y="995" font-family="Inter, sans-serif" font-size="16" font-weight="400" fill="#0D4D44">
+    Body Normal - 16px Regular
+  </text>
+  <text x="630" y="1025" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#737373">
+    Body Small - 14px Medium
+  </text>
+  <text x="630" y="1050" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#737373">
+    Body XS - 12px Medium
+  </text>
+  <text x="630" y="1120" font-family="Monaco, monospace" font-size="11" fill="#999999">
+    Font: Inter | Weights: 400-600
+  </text>
+
+  <!-- SECTION: Components Examples -->
+  <text x="40" y="1200" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#333333">
+    🧩 Exemples de composants
+  </text>
+  
+  <!-- Button Primary -->
+  <rect x="40" y="1220" width="200" height="56" rx="28" fill="#E9C46A"/>
+  <text x="140" y="1253" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0D4D44" text-anchor="middle">
+    Button Primary
+  </text>
+  
+  <!-- Button Outline -->
+  <rect x="260" y="1220" width="200" height="56" rx="28" fill="none" stroke="#E9C46A" stroke-width="2"/>
+  <text x="360" y="1253" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0D4D44" text-anchor="middle">
+    Button Outline
+  </text>
+  
+  <!-- Card Example -->
+  <rect x="480" y="1220" width="280" height="200" rx="16" fill="#FFFFFF" stroke="#D6E5E3" stroke-width="2"/>
+  <circle cx="540" cy="1270" r="24" fill="#E9C46A"/>
+  <text x="540" y="1350" font-family="Playfair Display, serif" font-size="18" font-weight="700" fill="#0D4D44" text-anchor="middle">
+    Card Title
+  </text>
+  <text x="620" y="1385" font-family="Inter, sans-serif" font-size="12" fill="#737373" text-anchor="middle">
+    Card description text goes here
+  </text>
+
+  <!-- Badge Examples -->
+  <rect x="800" y="1230" width="100" height="32" rx="16" fill="#E9C46A"/>
+  <text x="850" y="1251" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#0D4D44" text-anchor="middle">
+    Badge
+  </text>
+  
+  <rect x="920" y="1230" width="120" height="32" rx="16" fill="none" stroke="#A855F7" stroke-width="2"/>
+  <text x="980" y="1251" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#A855F7" text-anchor="middle">
+    AI Badge
+  </text>
+
+  <!-- SECTION: Spacing Reference -->
+  <text x="40" y="1480" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#333333">
+    📏 Espacements (Multiples de 8px)
+  </text>
+  
+  <rect x="40" y="1500" width="8" height="40" fill="#E9C46A"/>
+  <text x="55" y="1525" font-family="Monaco, monospace" font-size="11" fill="#666666">8px</text>
+  
+  <rect x="120" y="1500" width="16" height="40" fill="#E9C46A"/>
+  <text x="145" y="1525" font-family="Monaco, monospace" font-size="11" fill="#666666">16px</text>
+  
+  <rect x="210" y="1500" width="24" height="40" fill="#E9C46A"/>
+  <text x="245" y="1525" font-family="Monaco, monospace" font-size="11" fill="#666666">24px</text>
+  
+  <rect x="310" y="1500" width="32" height="40" fill="#E9C46A"/>
+  <text x="355" y="1525" font-family="Monaco, monospace" font-size="11" fill="#666666">32px</text>
+  
+  <rect x="420" y="1500" width="48" height="40" fill="#E9C46A"/>
+  <text x="475" y="1525" font-family="Monaco, monospace" font-size="11" fill="#666666">48px</text>
+  
+  <rect x="550" y="1500" width="64" height="40" fill="#E9C46A"/>
+  <text x="625" y="1525" font-family="Monaco, monospace" font-size="11" fill="#666666">64px</text>
+  
+  <rect x="700" y="1500" width="96" height="40" fill="#E9C46A"/>
+  <text x="810" y="1525" font-family="Monaco, monospace" font-size="11" fill="#666666">96px</text>
+
+  <!-- Footer Note -->
+  <rect x="40" y="1560" width="1120" height="30" rx="6" fill="#E9F7F5"/>
+  <text x="600" y="1580" font-family="Inter, sans-serif" font-size="12" fill="#0D4D44" text-anchor="middle">
+    💡 Glissez ce fichier SVG dans Figma - Tous les éléments seront éditables !
+  </text>
+</svg>
+
+
+
+
+
+
+
+
+
+

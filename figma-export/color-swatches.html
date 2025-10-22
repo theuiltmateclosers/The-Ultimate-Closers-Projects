@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ultimate Closers - Color Swatches</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #f5f5f5;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #0d4d44;
+      }
+
+      .subtitle {
+        color: #666;
+        margin-bottom: 40px;
+        font-size: 14px;
+      }
+
+      .section {
+        margin-bottom: 50px;
+      }
+
+      .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #333;
+        border-bottom: 2px solid #e9c46a;
+        padding-bottom: 10px;
+      }
+
+      .color-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .color-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.2s;
+        cursor: pointer;
+      }
+
+      .color-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .color-swatch {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .color-info {
+        padding: 15px;
+        background: #fafafa;
+      }
+
+      .color-name {
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      .color-value {
+        font-family: 'Monaco', 'Courier New', monospace;
+        font-size: 13px;
+        color: #666;
+        background: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      .color-usage {
+        font-size: 12px;
+        color: #999;
+        margin-top: 5px;
+      }
+
+      .copy-notice {
+        text-align: center;
+        margin-top: 30px;
+        padding: 20px;
+        background: #e9f7f5;
+        border-radius: 8px;
+        color: #0d4d44;
+      }
+
+      .gradient-card {
+        height: 120px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+        .container {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎨 The Ultimate Closers</h1>
+      <p class="subtitle">Design System - Color Palette</p>
+
+      <div class="section">
+        <h2 class="section-title">🎯 Couleurs Principales</h2>
+        <div class="color-grid">
+          <div class="color-card" onclick="copyColor('#0D4D44')">
+            <div class="color-swatch" style="background: #0d4d44; color: white">Primary</div>
+            <div class="color-info">
+              <div class="color-name">Primary</div>
+              <div class="color-value">#0D4D44</div>
+              <div class="color-usage">Vert Malachite - Couleur principale de la marque</div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyColor('#E9C46A')">
+            <div class="color-swatch" style="background: #e9c46a; color: #0d4d44">Secondary</div>
+            <div class="color-info">
+              <div class="color-name">Secondary</div>
+              <div class="color-value">#E9C46A</div>
+              <div class="color-usage">Or/Doré - Accent principal</div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyColor('#A855F7')">
+            <div class="color-swatch" style="background: #a855f7; color: white">Accent</div>
+            <div class="color-info">
+              <div class="color-name">Accent</div>
+              <div class="color-value">#A855F7</div>
+              <div class="color-usage">Violet - Pour les éléments IA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">🎨 Couleurs Neutres</h2>
+        <div class="color-grid">
+          <div class="color-card" onclick="copyColor('#F5F0E8')">
+            <div class="color-swatch" style="background: #f5f0e8; color: #0d4d44">Background</div>
+            <div class="color-info">
+              <div class="color-name">Background</div>
+              <div class="color-value">#F5F0E8</div>
+              <div class="color-usage">Fond principal du site</div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyColor('#0D4D44')">
+            <div class="color-swatch" style="background: #0d4d44; color: white">Foreground</div>
+            <div class="color-info">
+              <div class="color-name">Foreground</div>
+              <div class="color-value">#0D4D44</div>
+              <div class="color-usage">Texte principal</div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyColor('#EDEDED')">
+            <div class="color-swatch" style="background: #ededed; color: #333">Muted</div>
+            <div class="color-info">
+              <div class="color-name">Muted</div>
+              <div class="color-value">#EDEDED</div>
+              <div class="color-usage">Fond atténué</div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyColor('#737373')">
+            <div class="color-swatch" style="background: #737373; color: white">Muted Text</div>
+            <div class="color-info">
+              <div class="color-name">Muted Foreground</div>
+              <div class="color-value">#737373</div>
+              <div class="color-usage">Texte secondaire</div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyColor('#D6E5E3')">
+            <div class="color-swatch" style="background: #d6e5e3; color: #0d4d44">Border</div>
+            <div class="color-info">
+              <div class="color-name">Border</div>
+              <div class="color-value">#D6E5E3</div>
+              <div class="color-usage">Bordures</div>
+            </div>
+          </div>
+
+          <div class="color-card" onclick="copyColor('#FFFFFF')">
+            <div
+              class="color-swatch"
+              style="background: #ffffff; color: #0d4d44; border: 1px solid #e0e0e0"
+            >
+              Card
+            </div>
+            <div class="color-info">
+              <div class="color-name">Card</div>
+              <div class="color-value">#FFFFFF</div>
+              <div class="color-usage">Fond des cartes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">✨ Gradients</h2>
+
+        <div class="gradient-card" style="background: linear-gradient(135deg, #0d4d44, #0a3835)">
+          Gradient Cosmic
+        </div>
+        <p style="margin-bottom: 20px; color: #666">
+          <code>linear-gradient(135deg, #0D4D44, #0A3835)</code>
+        </p>
+
+        <div class="gradient-card" style="background: linear-gradient(135deg, #e9c46a, #f4d687)">
+          Gradient Gold
+        </div>
+        <p style="margin-bottom: 20px; color: #666">
+          <code>linear-gradient(135deg, #E9C46A, #F4D687)</code>
+        </p>
+
+        <div class="gradient-card" style="background: linear-gradient(135deg, #a855f7, #9333ea)">
+          Gradient AI
+        </div>
+        <p style="color: #666">
+          <code>linear-gradient(135deg, #A855F7, #9333EA)</code>
+        </p>
+      </div>
+
+      <div class="copy-notice">
+        💡 <strong>Astuce :</strong> Cliquez sur une couleur pour copier son code hexadécimal !
+      </div>
+    </div>
+
+    <script>
+      function copyColor(hex) {
+        navigator.clipboard.writeText(hex).then(() => {
+          // Visual feedback
+          const notice = document.querySelector('.copy-notice');
+          const originalText = notice.innerHTML;
+          notice.innerHTML = `✅ <strong>${hex}</strong> copié dans le presse-papier !`;
+          notice.style.background = '#D4EDDA';
+
+          setTimeout(() => {
+            notice.innerHTML = originalText;
+            notice.style.background = '#E9F7F5';
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

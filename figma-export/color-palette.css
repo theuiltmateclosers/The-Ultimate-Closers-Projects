@@ -1,0 +1,103 @@
+/**
+ * The Ultimate Closers - Color Palette
+ * Fichier CSS de référence pour les couleurs
+ * Peut être utilisé comme guide visuel dans Figma
+ */
+
+:root {
+  /* Primary Colors - Malachite Deep Green */
+  --primary: #0d4d44;
+  --primary-hover: #0a3d35;
+  --primary-light: #165b50;
+  --primary-foreground: #fafafa;
+
+  /* Secondary Colors - Golden Accent */
+  --secondary: #e9c46a;
+  --secondary-hover: #f4d687;
+  --secondary-dark: #d4af4f;
+  --secondary-foreground: #0d4d44;
+
+  /* Accent Colors - AI Purple */
+  --accent: #a855f7;
+  --accent-hover: #9333ea;
+  --accent-light: #c084fc;
+  --accent-foreground: #fafafa;
+
+  /* Neutral Colors */
+  --background: #f5f0e8;
+  --foreground: #0d4d44;
+  --muted: #ededed;
+  --muted-foreground: #737373;
+  --border: #d6e5e3;
+
+  /* Semantic Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+
+  /* Card & Surface */
+  --card: #ffffff;
+  --card-foreground: #0d4d44;
+
+  /* Special Effects */
+  --glow-gold: rgba(233, 196, 106, 0.5);
+  --glow-ai: rgba(168, 85, 247, 0.4);
+  --glow-primary: rgba(13, 77, 68, 0.4);
+
+  /* Gradients */
+  --gradient-cosmic: linear-gradient(135deg, #0d4d44, #0a3835);
+  --gradient-gold: linear-gradient(135deg, #e9c46a, #f4d687);
+  --gradient-ai: linear-gradient(135deg, #a855f7, #9333ea);
+  --gradient-hero: linear-gradient(rgba(13, 77, 68, 0.85), rgba(18, 18, 18, 0.9));
+}
+
+/* Dark Mode */
+.dark {
+  --background: #121212;
+  --foreground: #fafafa;
+  --card: #1a1a1a;
+  --card-foreground: #fafafa;
+  --primary: #e9c46a;
+  --primary-foreground: #121212;
+  --secondary: #165b50;
+  --secondary-foreground: #fafafa;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --border: #333333;
+}
+
+/* Usage Examples (for reference) */
+.example-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.example-secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.example-accent {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.example-glow-gold {
+  box-shadow: 0 0 30px var(--glow-gold);
+}
+
+.example-gradient-hero {
+  background: var(--gradient-hero), url('/assets/hero-cosmic.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+

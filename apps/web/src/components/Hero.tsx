@@ -2,7 +2,8 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight, LogIn } from 'lucide-react';
+import Link from 'next/link';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -63,13 +64,16 @@ const Hero = () => {
               {t('hero.cta.primary')}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-background/10 backdrop-blur-sm border-2 border-secondary hover:bg-secondary hover:text-primary text-background font-semibold px-8 py-6 rounded-full transition-all"
-            >
-              {t('hero.cta.secondary')}
-            </Button>
+            <Link href="/auth">
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-background/10 backdrop-blur-sm border-2 border-secondary hover:bg-secondary hover:text-primary text-background font-semibold px-8 py-6 rounded-full transition-all group"
+              >
+                <LogIn className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                Connexion
+              </Button>
+            </Link>
           </div>
 
           {/* Floating animation hint */}
