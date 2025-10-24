@@ -2,10 +2,10 @@
   "name": "The Ultimate Closers",
   "projectId": "764836c7-4acb-4f95-864f-ce0a767d6c78",
   "framework": "next",
-  "buildCommand": "cd apps/web && pnpm install && pnpm build",
+  "buildCommand": "cd apps/web && npm install && npm run build",
   "outputDirectory": "apps/web/.next",
-  "installCommand": "pnpm install",
-  "devCommand": "pnpm -C apps/web dev",
+  "installCommand": "npm install",
+  "devCommand": "cd apps/web && npm run dev",
   "rootDirectory": "./",
   "envVars": {
     "NEXT_PUBLIC_API_URL": "https://api.theultimateclosers.com",
@@ -15,5 +15,11 @@
     "autoDeploy": true,
     "branch": "main",
     "preview": true
+  },
+  "features": {
+    "auth": true,
+    "admin": true,
+    "triggers": true,
+    "animations": true
   }
 }
