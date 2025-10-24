@@ -8,6 +8,12 @@
   "devCommand": "pnpm -C apps/web dev",
   "rootDirectory": "./",
   "envVars": {
-    "NEXT_PUBLIC_API_URL": "https://api.theultimateclosers.com"
+    "NEXT_PUBLIC_API_URL": "https://api.theultimateclosers.com",
+    "NODE_ENV": "production"
+  },
+  "deployment": {
+    "autoDeploy": true,
+    "branch": "main",
+    "preview": true
   }
 }
